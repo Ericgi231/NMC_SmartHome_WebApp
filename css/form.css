@@ -1,0 +1,24 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color:black;
+}
+
+.form-account {
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: auto;
+	border:4px solid #00BCD5;
+	background-color:white;
+	border-radius:5px;
+}
