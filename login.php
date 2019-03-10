@@ -11,7 +11,7 @@
 		<h1 class="form-text">Login</h1>
         	<?php 
                 if (isset($_COOKIE["errorMessage"])) {
-                    echo "<p class='text-danger'>" . $_COOKIE["errorMessage"] . "</p>"
+                    echo "<p class='text-danger'>" . $_COOKIE["errorMessage"] . "</p>";
                 } 
                 unset($_COOKIE["errorMessage"]);
             ?>
