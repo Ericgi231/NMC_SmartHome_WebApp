@@ -21,7 +21,7 @@ include 'php/connect.php';
 	
 	</div>
 
-	<h1>Hello World!</h1>
+	<h1>Hello user!</h1>
 
 	<?php
 		$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC';
