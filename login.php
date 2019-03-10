@@ -9,7 +9,7 @@
 <div class="container">
 	<form action="./php/loginBackend.php" method="post" class="form-account">
 		<h1 class="form-text">Login</h1>
-        <?php if (isset($_COOKIE["errorMessage"])) {echo $_COOKIE["errorMessage"]} ?>
+        	<?php if (isset($_COOKIE["errorMessage"])) {echo $_COOKIE["errorMessage"];} ?>
 		<div class="form-group">
 			<label for="username">Username:</label>
 			<input type="text" name="username" class="form-control" placeholder="Username"  pattern="[a-zA-z0-9-]+" required/>
