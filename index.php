@@ -10,13 +10,18 @@ include 'php/connect.php';
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Smart Home</title>
+	<title>Intelligent Fongle Smart Home System</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/site.css"/>	
 	<script src="js/main.js"></script>
 </head>
-<body>
+<body style="font-family:Tahoma, Geneva, sans-serif;color:#aaaaaa;">
+
+    <div style="background-color:#00BCD5;padding:15px;text-align:center;">
+        <img src="images/SVG/Asset 2.svg" alt="Team Fongle Logo" height="150" width="150" />
+    </div>
+
 	<div id="nav-frame">
 	
 	</div>
@@ -43,5 +48,8 @@ include 'php/connect.php';
 		mysqli_close($conn);
 	?>
 	 </div>
+
+	  <div style="background-color:#00BCD5;text-align:center;padding:10px;margin-top:7px;">© Intelligent Fongle Smart Home System</div>
+
 </body>
 </html>
