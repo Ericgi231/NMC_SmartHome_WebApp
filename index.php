@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($_COOKIE["user"])) {
-	header("Location: ./login.html");
+	header("Location: ./login.php");
 }
 
 ini_set('display_errors', 1);

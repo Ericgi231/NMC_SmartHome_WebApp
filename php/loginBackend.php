@@ -23,29 +23,25 @@ if ( isset( $_POST['submit'] ) )
 			if (password_verify($pass, $row["Password"])) 
 			{
 				setcookie("user", $row["UserName"], time() + (86400 * 30), "/");
-
 				header("Location: ../index.php");
-				
 				$conn->close();
 				exit;
 			}
 			else
 			{
+				setcookie("errorMessage", "Incorrect password", time() + 100, "/");
+				header("Location: ../login.php");
 				$conn->close();
-				echo "<h1>Incorrect password.</h1>";
-				echo "<a href='../login.html'>Go Back</a>";
 				exit;
 			}
 		}
 	} 
 	else 
 	{
+		setcookie("errorMessage", "Account not found", time() + 100, "/");
+		header("Location: ../login.php");
 		$conn->close();
-		echo "<h1>Account does not exist.</h1>";
-		echo "<a href='../login.html'>Go Back</a>";
 		exit;
 	}
-	
-	$conn->close();	
 } 
 ?>

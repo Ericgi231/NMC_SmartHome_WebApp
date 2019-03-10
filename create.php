@@ -7,8 +7,8 @@
 </head>
 <body>
 <div class="container">
-	<form action="../php/login.php" method="post" class="form-account">
-		<h1 class="form-text">Login</h1>
+	<form action="./php/createBackend.php" method="post" class="form-account">
+		<h1 class="form-text">Create Account</h1>
 		<div class="form-group">
 			<label for="username">Username:</label>
 			<input type="text" name="username" class="form-control" placeholder="Username"  pattern="[a-zA-z0-9-]+" required/>
@@ -19,8 +19,16 @@
 			<input type="password" name="password" class="form-control" placeholder="Password" pattern="[^\s]+" required/>
 			<small class="form-text text-muted">No spaces.</small>
 		</div>
-		<input type="submit" name="submit" value="Login" class="btn fongle-blue"/>
-		<input type="button" name="create" value="Sign Up" onclick="location.href='./create.html'" class="btn fongle-blue"/>
+		<div class="form-group">
+			<label for="name">Full Name:</label>
+			<input type="text" name="name" class="form-control" placeholder="Real Name" required/>
+		</div>
+		<div class="form-group">
+			<label for="email">E-Mail:</label>
+			<input type="email" name="email" class="form-control" placeholder="E-Mail" required/>
+		</div>
+		<input type="submit" name="submit" value="Create Account" class="btn fongle-blue"/>
+		<input type="button" name="login" value="Login" onclick="location.href='./login.php'" class="btn fongle-blue"/>
 	<form>
 </div>
 </body>
