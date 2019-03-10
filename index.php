@@ -24,7 +24,7 @@ include 'php/connect.php';
 	<h1>Hello user!</h1>
 
 	<?php
-		$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC';
+		$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 1';
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) > 0){
