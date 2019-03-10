@@ -29,7 +29,7 @@ if ( isset( $_POST['submit'] ) )
 			}
 			else
 			{
-				setcookie("errorMessage", "Incorrect password", time(), "/");
+				setcookie("errorMessage", "Incorrect password", time() + 1, "/");
 				header("Location: ../login.php");
 				$conn->close();
 				exit;
@@ -38,7 +38,7 @@ if ( isset( $_POST['submit'] ) )
 	} 
 	else 
 	{
-		setcookie("errorMessage", "Account not found", time(), "/");
+		setcookie("errorMessage", "Account not found", time() + 1, "/");
 		header("Location: ../login.php");
 		$conn->close();
 		exit;
