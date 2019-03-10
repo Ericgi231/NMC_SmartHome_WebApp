@@ -1,4 +1,9 @@
 <?php
+
+if (!isset($_COOKIE["user"])) {
+	header("Location: ./login.html");
+}
+
 ini_set('display_errors', 1);
 include 'php/connect.php';
 ?>
