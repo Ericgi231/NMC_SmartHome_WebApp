@@ -13,11 +13,11 @@
 	                if (isset($_COOKIE["errorMessage"])) {
         	            	echo "<p class='form-text text-danger'>" . $_COOKIE["errorMessage"] . "</p>";
 				unset($_COOKIE["errorMessage"]);
-                	} else if (isset($_COOKIE["succMessage"])) {
+                	}
+			if (isset($_COOKIE["succMessage"])) {
 	        	        echo "<p class='form-text text-success'>" . $_COOKIE["succMessage"] . "</p>";
 				unset($_COOKIE["succMessage"]);			
 			}
-                	unset($_COOKIE["errorMessage"]);
             	?>
 		<div class="form-group">
 			<label for="username">Username:</label>
