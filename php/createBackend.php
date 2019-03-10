@@ -18,9 +18,9 @@ if ( isset( $_POST['submit'] ) )
 	$res = $conn->query($sql);
 	
 	if ($res->num_rows > 0) {
+		setcookie("errorMessage", "Username already in use", time() + 1, "/");
+		header("Location: ../create.php");
 		$conn->close();
-		echo "<h1>Username taken. Please try a different name.</h1>";
-		echo "<a href='../create.html'>Go Back</a>";
 		exit;
 	}
 	
@@ -30,14 +30,14 @@ if ( isset( $_POST['submit'] ) )
 		('".$user."', '".$pass."', '".$nameSplit[0]."', '".$nameSplit[1]."', '".$mail."')";
 		
 	if ($conn->query($sql) === TRUE) {
+		setcookie("succMessage", "Account created", time() + 1, "/");
+		header("Location: ../login.php");
 		$conn->close();
-		echo "<h1>Account created.</h1>";
-		echo "<a href='../login.html'>Login Now</a>";
 		exit;
-	} else {	
+	} else {
+		setcookie("errorMessage", "Incorrect password", time() + 1, "/");
+		header("Location: ../create.php");
 		$conn->close();
-		echo "<h1>Account creation failed. Please try again later.</h1>";
-		echo "<a href='../create.html'>Go Back</a>";
 		exit;
 	}	
 } 
