@@ -22,7 +22,9 @@ include 'php/connect.php';
 	</div>
 
 	<h1>Hello user!</h1>
-
+<!-- Div code for Temperature Overview around this PHP block-->
+        <div class="temp">
+            <h2>Temperature Overview</h2>       
 	<?php
 		$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 1';
 		$result = mysqli_query($conn, $sql);
@@ -40,6 +42,6 @@ include 'php/connect.php';
 		
 		mysqli_close($conn);
 	?>
-	
+	 </div>
 </body>
 </html>
