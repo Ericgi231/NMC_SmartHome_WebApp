@@ -76,7 +76,7 @@ include 'php/connect.php';
 	 </br>
 	 </br>
 	  <footer>
-		<div style="background-color:#00BCD5;color:#000000;text-align:center;padding:10px;margin-top:7px;">© Intelligent Fongle Smart Home System</div>
+		<div style="background-color:#00BCD5;color:#000000;text-align:center;padding:10px;margin-top:7px;text-align:center;">© Intelligent Fongle Smart Home System</div>
 	  </footer>
 
 </body>
