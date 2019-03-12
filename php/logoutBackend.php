@@ -1,4 +1,5 @@
 <?php
-	unset($_COOKIE["user"]);
-	header("Redirect: ../login.php");
+	session_start();
+	session_destroy();
+	header("Location: ../login.php");
 ?>
