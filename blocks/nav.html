@@ -1,18 +1,38 @@
-<div style="background-color:#00BCD5;padding:15px;text-align:center;">
-    <img src="images/SVG/Asset 2.svg" alt="Team Fongle Logo" height="150" width="150" />
-
-<div style="overflow:auto">
-    <div class="menu">
-        <nav>
-            <a href="index.php">Home</a>
-            <a href="#">Details</a>
-            <a href="#">Configuration</a>
-            <a href="#">Contact Us</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="php/logoutBackend.php">Logout</a>
-        </nav>
-    </div>
-
-</div>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light fongle-blue">
+	<a class="navbar-brand" href="#">
+		<img src="./images/SVG/Asset 2.svg" alt="Team Fongle Logo" height="50" width="50" />
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle Navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbar">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">	
+				<a class="nav-link"  href="index.php">Dashboard</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Modules
+				</a>
+				<div class="dropdown-menu"  aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="./module/climate.php">Climate</a>
+					<a class="dropdown-item" href="#">Lights</a>
+				</div>
+			</li>
+			<li class="nav-item">	
+				<a class="nav-link" href="#">Settings</a>
+			</li>
+			<li class="nav-item">	
+				<a class="nav-link" href="#">About</a>
+			</li>
+			<li class="nav-item">	
+				<a class="nav-link" href="#">Contact</a>
+			</li>
+		</ul>
+		<ul class="navbar-nav">
+			<li class="nav-item ">
+				<a class="nav-link" href="php/logoutBackend.php">Logout</a>
+			</li>
+		</ul>
+	</div>
+</nav>
