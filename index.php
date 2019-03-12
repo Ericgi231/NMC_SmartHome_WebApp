@@ -26,7 +26,7 @@ include 'php/connect.php';
 	
 	</div>
 
-	<h1>Hello user!</h1>
+	<h1>Welcome!</h1>
 <!-- Div code for Temperature Overview around this PHP block-->
         <div class="temp">
             <h2>Temperature Overview</h2>       
@@ -49,7 +49,36 @@ include 'php/connect.php';
 	?>
 	 </div>
 
-	  <div style="background-color:#00BCD5;text-align:center;padding:10px;margin-top:7px;">© Intelligent Fongle Smart Home System</div>
+	  <div class="light">
+            <h2>Light Overview</h2>       
+
+	 </div>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 <div class="sensor">
+            <h2>Sensor Overview</h2>       
+	 </div>
+	 	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	  <footer>
+		<div style="background-color:#00BCD5;text-align:center;padding:10px;margin-top:7px;">© Intelligent Fongle Smart Home System</div>
+	  </footer>
 
 </body>
 </html>

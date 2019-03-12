@@ -1,6 +1,10 @@
 body {
-	color:white;
-	background-color:#202020;
+    color: white;
+    background-color: #202020;
+}
+
+h1 {
+    text-align: center;
 }
 
 .fongle-blue{
@@ -35,6 +39,8 @@ body {
         color: black;
     }
 
+
+
 .main {
     float: left;
     width: 60%;
@@ -52,9 +58,10 @@ body {
 
 .light {
     background-color: #e5e5e5;
-    float: left;
+    float: right;
     width: 20%;
     padding: 15px;
+    float: right;
     margin-top: 7px;
     text-align: center;
 }
@@ -77,14 +84,14 @@ body {
     text-align: center;
 }
 
-.right {
+/*.right {
     background-color: #e5e5e5;
     float: left;
     width: 20%;
     padding: 15px;
     margin-top: 7px;
     text-align: center;
-}
+}*/
 
 @media only screen and (max-width:620px) {
     /* For mobile phones: */
