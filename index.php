@@ -66,9 +66,13 @@ include 'php/connect.php';
 	 </br>
 	 </br>
 	 <div class="sensor">
-            <h2>Sensor Overview</h2>       
+        <h2>Sensor Overview</h2>       
 	 </div>
-	 	 </br>
+
+	 <div class="alarm">
+		<h2>Alarm Overview</h2>       
+	 </div>
+	 </br>
 	 </br>
 	 </br>
 	 </br>
