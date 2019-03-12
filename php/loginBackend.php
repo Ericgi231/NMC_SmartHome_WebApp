@@ -1,4 +1,5 @@
 <?php
+session_start();
 ini_set('display_errors', 1);
 include 'connect.php';
 
@@ -22,7 +23,7 @@ if ( isset( $_POST['submit'] ) )
 			//If password is correct sign in and set account cookie
 			if (password_verify($pass, $row["Password"])) 
 			{
-				setcookie("user", $row["UserName"], time() + (86400 * 30), "/");
+				$_SESSION["user"] = $row["UserName"];
 				header("Location: ../index.php");
 				$conn->close();
 				exit;
