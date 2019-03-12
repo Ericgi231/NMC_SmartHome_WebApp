@@ -18,10 +18,6 @@ include 'php/connect.php';
 </head>
 <body style="font-family:Tahoma, Geneva, sans-serif;color:#aaaaaa;">
 
-    <div style="background-color:#00BCD5;padding:15px;text-align:center;">
-        <img src="images/SVG/Asset 2.svg" alt="Team Fongle Logo" height="150" width="150" />
-    </div>
-
 	<div id="nav-frame">
 	
 	</div>
@@ -53,6 +49,7 @@ include 'php/connect.php';
             <h2>Light Overview</h2>       
 
 	 </div>
+
 	 </br>
 	 </br>
 	 </br>
@@ -65,6 +62,7 @@ include 'php/connect.php';
 	 </br>
 	 </br>
 	 </br>
+
 	 <div class="sensor">
         <h2>Sensor Overview</h2>       
 	 </div>
@@ -72,10 +70,7 @@ include 'php/connect.php';
 	 <div class="alarm">
 		<h2>Alarm Overview</h2>       
 	 </div>
-	 </br>
-	 </br>
-	 </br>
-	 </br>
+
 	 </br>
 	 </br>
 	 </br>
