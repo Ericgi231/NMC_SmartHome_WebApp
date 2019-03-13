@@ -46,7 +46,9 @@
 		</div>
 	</div>
 </div>
-
+</br>
+</br>
+</br>
 <?php mysqli_close($conn); ?>
 
 <!-- Bootstrap Js -->
