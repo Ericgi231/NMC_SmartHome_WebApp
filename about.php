@@ -44,9 +44,7 @@
                     <p>Team Fongle is a group of students at NMC who choose to create a project that allows the user to view the current temperature and humidity of the room. It also allows the user to view which room the lights were last turned on.</p>     
 			</div>
 		</div>
-		</br>
-		</br>
-		</br>
+
 		<div class="row">
   <div class="column">
     <div class="card">
@@ -60,9 +58,7 @@ I spent my childhood in the great outdoors living on a farm in Wisconsin. While 
       </div>
     </div>
   </div>
-</br>
-</br>
-</br>
+
   <div class="column">
     <div class="card">
       <img src="/images/jason.png" alt="Jason" style="width:100%">
@@ -75,9 +71,7 @@ Jason enjoys video games, piano, and digital art.
       </div>
     </div>
   </div>
-  </br>
-  </br>
-  </br>
+
   <div class="column">
     <div class="card">
       <img src="/images/bruce.php" alt="Bruce" style="width:100%">
@@ -90,9 +84,7 @@ Jason enjoys video games, piano, and digital art.
     </div>
   </div>
 </div>
-</br>
-</br>
-</br>
+
 <div class="row">
   <div class="column">
     <div class="card">
@@ -104,11 +96,7 @@ Jason enjoys video games, piano, and digital art.
       </div>
     </div>
   </div>
-  </br>
-  </br>
-</br>
-</br>
-</br>
+
   <div class="column">
     <div class="card">
       <img src="/images/stacy.png" alt="Stacy" style="width:100%">
@@ -122,9 +110,7 @@ Jason enjoys video games, piano, and digital art.
   </div>
 </div>
 </div>
-</br>
-</br>
-</br>
+
 <?php mysqli_close($conn); ?>
 
 <!-- Bootstrap Js -->
