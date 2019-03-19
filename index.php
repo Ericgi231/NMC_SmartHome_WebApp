@@ -61,20 +61,23 @@
 
 		<div class="col-lg-6">
 			<div class="overview fongle-blue">
-				<h2 class="text-center">Lights</h2>       
+				<h2 class="text-center">Lights</h2>
+				<h3>Coming Soon!</h3>
 			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-lg-6">
 			<div class="overview fongle-blue">
-       				<h2 class="text-center">Sensors</h2>       
+       				<h2 class="text-center">Sensors</h2>
+					<h3>Coming Soon!</h3>
 			</div>
 		</div>
 
 		<div class="col-lg-6">
 			<div class="overview fongle-blue">
-       				<h2 class="text-center">Alarms</h2>       
+       				<h2 class="text-center">Alarms</h2>
+					<h3>Coming Soon!</h3>
 			</div>
 		</div>
 	</div>
