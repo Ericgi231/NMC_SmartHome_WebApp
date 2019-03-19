@@ -45,8 +45,7 @@
 			</div>
 		</div>
 
-		<div class="row">
-  <div class="column">
+ <div class="row">
     <div class="card">
       <img src="/images/eric.png" alt="Eric" style="width:100%">
       <div class="container">
@@ -58,8 +57,7 @@ I spent my childhood in the great outdoors living on a farm in Wisconsin. While 
       </div>
     </div>
   </div>
-
-  <div class="column">
+  <div class="row">
     <div class="card">
       <img src="/images/jason.png" alt="Jason" style="width:100%">
       <div class="container">
@@ -71,8 +69,7 @@ Jason enjoys video games, piano, and digital art.
       </div>
     </div>
   </div>
-
-  <div class="column">
+  <div class="row">
     <div class="card">
       <img src="/images/bruce.php" alt="Bruce" style="width:100%">
       <div class="container">
@@ -86,7 +83,6 @@ Jason enjoys video games, piano, and digital art.
 </div>
 
 <div class="row">
-  <div class="column">
     <div class="card">
       <img src="/images/courtney.png" alt="Courtney" style="width:100%">
       <div class="container">
@@ -98,10 +94,9 @@ Jason enjoys video games, piano, and digital art.
   </div>
 
   <div class="column">
-    <div class="card">
       <img src="/images/stacy.png" alt="Stacy" style="width:100%">
       <div class="container">
-        <h2>Mike Ross</h2>
+        <h2>Stacy</h2>
         <p class="title">Notebook Organizer</p>
         <p>Stacy Revolt is a web developer in Traverse City, Michigan.  She enjoys writing code and learning new coding languages.   She has recently begun to learn about infrastructure through a class in A+.  In her spare time, she enjoys spending time with her family and friends, traveling, and yoga.  She is a student at Northwestern Michigan College and on track to graduate with her Associates in Applied Science in the Spring of 2019.</p>
       </div>
