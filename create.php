@@ -5,10 +5,10 @@
 <link rel="stylesheet" href="css/site.css"/>
 <link rel="stylesheet" href="css/form.css"/>
 </head>
-<body>
+<body class="fongle-dark-gray">
 <div class="container">
 	<form action="./php/createBackend.php" method="post" class="form-account">
-		<h1 class="form-text">Create Account</h1>
+		<h1 class="form-text text-center">Create Account</h1>
 		<?php
 			if (isset($_COOKIE["errorMessage"])) {
 				echo "<p class='form-text text-danger'> " . $_COOKIE["errorMessage"] . "</p>";
@@ -35,7 +35,7 @@
 		</div>
 		<input type="submit" name="submit" value="Create Account" class="btn fongle-blue"/>
 		<input type="button" name="login" value="Login" onclick="location.href='./login.php'" class="btn fongle-blue"/>
-	<form>
+	</form>
 </div>
 </body>
 </html>

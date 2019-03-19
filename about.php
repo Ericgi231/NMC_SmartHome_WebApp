@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	session_start();
 	if (!isset($_SESSION["user"])) {
 		header("Location: ./login.php");
@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Dashboard</title>
+	<title>About</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     	<link rel="shortcut icon" href=""/>
@@ -38,48 +38,17 @@
 		</div>
 	</div>
 	
-	<!-- Temperature and Light overview row -->
-	<div class="row">
 		<div class="col-lg-6">
 			<div class="overview fongle-blue">
-        			<h2 class="text-center">Climate</h2>       
-				<?php
-					$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 1';
-					$result = mysqli_query($conn, $sql);	
-					if (mysqli_num_rows($result) > 0){
-						while ($row = mysqli_fetch_assoc($result)) {
-							//echo "<p>Time: " . date_format(date_create($row["RecordTime"]), "m/d/y-h:i A") . "</p>";
-							echo "<p>Humidity: " . $row["Humidity"] . "%</p>";
-							echo "<p>Temperature: " . (($row["Temperature"]*9/5) + 32) . "*f</p>";
-						}
-					} else {
-						echo "<p>No data found</p>";
-					}	
-				?>
-			</div>
-		</div>
-
-		<div class="col-lg-6">
-			<div class="overview fongle-blue">
-				<h2 class="text-center">Lights</h2>       
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-6">
-			<div class="overview fongle-blue">
-       				<h2 class="text-center">Sensors</h2>       
-			</div>
-		</div>
-
-		<div class="col-lg-6">
-			<div class="overview fongle-blue">
-       				<h2 class="text-center">Alarms</h2>       
+       				<h2 class="text-center">About Team Fongle</h2>  
+                    <p>Team Fongle is a group of students at NMC who choose to create a project that allows the user to view the current temperature and humidity of the room. It also allows the user to view which room the lights were last turned on.</p>     
 			</div>
 		</div>
 	</div>
 </div>
-
+</br>
+</br>
+</br>
 <?php mysqli_close($conn); ?>
 
 <!-- Bootstrap Js -->
