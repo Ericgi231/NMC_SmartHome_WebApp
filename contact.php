@@ -45,12 +45,15 @@
                     <p>Phone Number: 231-999-0001</p>    
                     <p>Northwestern Michigan College</p>  
 			</div>
-		</div>
+
+		<!--</div>
+		<div class="row">
+		<div class="col-lg-12">
+		</div>-->
+
+	</div>
 	</div>
 </div>
-</br>
-</br>
-</br>
 <?php mysqli_close($conn); ?>
 
 <!-- Bootstrap Js -->
