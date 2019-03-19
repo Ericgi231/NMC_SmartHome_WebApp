@@ -75,7 +75,6 @@ Jason enjoys video games, piano, and digital art.
   <div class="col-lg-4">
     <div class="box fongle-blue">
       <img src="./images/courtney.png" alt="Courtney" style="width:100%">
-        <h2>Courtney</h2>
         <p class="title">Frontend Developer</p>
         <p>Courtney Lints is a UX/UI and frontend designer and developer in Traverse City, Michigan. When Courtney is not creating wire frames, mock up and prototypes for her projects, she is babysitting eight kids - but not all at the same time. She enjoys watching baseball games and doing fun things with the kids she babysits. Courtney is in college at Northwestern Michigan full time and is on her last semester and getting an Associates Degree in Web Development. </p>
     </div>
@@ -84,7 +83,7 @@ Jason enjoys video games, piano, and digital art.
   <div class="col-lg-4">
     <div class="box fongle-blue">
       <img src="./images/stacy.png" alt="Stacy" style="width:100%">
-        <h2>Mike Ross</h2>
+        <h2>Stacey</h2>
         <p class="title">Notebook Organizer</p>
         <p>Stacy Revolt is a web developer in Traverse City, Michigan.  She enjoys writing code and learning new coding languages.   She has recently begun to learn about infrastructure through a class in A+.  In her spare time, she enjoys spending time with her family and friends, traveling, and yoga.  She is a student at Northwestern Michigan College and on track to graduate with her Associates in Applied Science in the Spring of 2019.</p>
     </div>
