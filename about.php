@@ -94,7 +94,7 @@ Jason enjoys video games, piano, and digital art.
     <div class="col-lg-4">
     <div class="box fongle-blue">      
         <h2>Credit for Icons</h2>
-        <img src="./images/icons/001-thermometer-tool.svg" alt="thermometer" style="width:100%"><p>Icon made by Freepik from www.flaticon.com</p>
+        <img src="./images/icons/001-thermometer-tool.svg" alt="thermometer" style="width:25%"><p>Icon made by Freepik from www.flaticon.com</p>
 		<img src="./images/icons/002-wifi.svg" alt="wifi house" style="width:25%"><p>Icon made by Freepik from www.flaticon.com</p>
 		<img src="./images/icons/003-light-bulb.svg" alt="light bulb on" style="width:25%"><p>Icon made by Creaticca Creative Agency from www.flaticon.com</p>
 		<img src="./images/icons/004-light-bulb-1.svg" alt="light bulb off" style="width:25%"><p>Icon made by Creaticca Creative Agency from www.flaticon.com</p>
