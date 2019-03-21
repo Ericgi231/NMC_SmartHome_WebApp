@@ -45,15 +45,29 @@
                     <p>Phone Number: 231-999-0001</p>    
                     <p>Northwestern Michigan College</p>  
 			</div>
-
-		<!--</div>
-		<div class="row">
-		<div class="col-lg-12">
-		</div>-->
-
+		</div>
 	</div>
-	</div>
+
+	<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
 </div>
+
+
+</div>
+
 <?php mysqli_close($conn); ?>
 
 <!-- Bootstrap Js -->
