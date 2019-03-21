@@ -48,8 +48,10 @@
 		</div>
 	</div>
 
-	<h3>Contact Form</h3>
+	
+</div>
 
+<h3>Contact Form</h3>
 <div class="container">
   <form action="/action_page.php">
     <label for="fname">First Name</label>
@@ -61,11 +63,8 @@
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" method="post" action="mailto:fongle@teamfongle.com"> 
   </form>
-</div>
-
-
 </div>
 
 <?php mysqli_close($conn); ?>
