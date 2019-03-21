@@ -92,8 +92,7 @@ Jason enjoys video games, piano, and digital art.
   </div>
 
     <div class="col-lg-4">
-    <div class="box fongle-blue">
-      
+    <div class="box fongle-blue">      
         <h2>Credit for Icons</h2>
         <img src="./images/icons/001-thermometer-tool.svg" alt="thermometer" style="width:100%"><p>Icon made by Freepik from www.flaticon.com</p>
 		<img src="./images/icons/002-wifi.svg" alt="wifi house" style="width:100%"><p>Icon made by Freepik from www.flaticon.com</p>
@@ -103,7 +102,6 @@ Jason enjoys video games, piano, and digital art.
 	  </div>
     </div>
   </div>
-
 </div>
 </div>
 
