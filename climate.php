@@ -1,3 +1,12 @@
+<?php
+	session_start();
+	if (!isset($_SESSION["user"])) {
+		header("Location: ./login.php");
+	}
+	ini_set('display_errors', 1);
+	include 'php/connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +19,7 @@
 
 	<!-- Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
 	<!-- Custom CSS & Js-->
 	<link rel="stylesheet" href="css/site.css"/>	
 	<link rel="stylesheet" href="css/index.css"/>
@@ -21,14 +30,6 @@
 <div id="nav-frame"></div>
 <!-- Content container -->
 <div class="container fongle-dark-gray">
-	<!-- User greeting row-->
-	<div class="row">
-		<div class="col-lg-12">
-			<div class="greeting">
-				<h1 class="text-center">Hello <?php echo $_SESSION["first"]; ?></h1>
-			</div>
-		</div>
-	</div>
 	
 	<!-- Temperature and Light overview row -->
 	<div class="row">
@@ -53,7 +54,7 @@
 		<div class="col-lg-6">
 			<div class="overview fongle-blue">
 				<h2 class="text-center">Graph</h2>  
-				
+				<h2 class="text-center">"Comming Soon"</h2> 
 
 			</div>
 		</div>
