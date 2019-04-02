@@ -3,8 +3,10 @@
     "",
     "\\blocks",
     "\\css",
+    "\\images",
+    "\\images\\icons",
     "\\php"
   ],
-  "SelectedNode": "\\css\\index.css",
+  "SelectedNode": "\\php\\connect.php",
   "PreviewInSolutionExplorer": false
 }
