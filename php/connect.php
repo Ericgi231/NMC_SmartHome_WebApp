@@ -1,8 +1,8 @@
 <?php
 	$server = "localhost"; //Make sure to change back to localhost before i push it. To view the pages put the server to fongle.info to view the pages
-	$user = "smart_user";
+	$user = "SmartUser";
 	$pass = "Password1";
-	$db = "smart_home";	
+	$db = "SmartHome";	
 
 	$conn = new mysqli($server, $user, $pass, $db);
 
