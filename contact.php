@@ -39,7 +39,7 @@
 	</div>
 	
 		<div class="col-lg-6">
-			<div class="overview fongle-blue">
+			<div class="fongle-blue header-box">
        				<h2 class="text-center">Contact Team Fongle</h2>  
                     <p>Email: fongle@teamfongle.com</p> 
                     <p>Phone Number: 231-999-0001</p>    
