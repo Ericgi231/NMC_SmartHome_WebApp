@@ -16,7 +16,7 @@
 					Modules
 				</a>
 				<div class="dropdown-menu"  aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="/module/climate.php">Climate</a>
+					<a class="dropdown-item" href="/module/climate.php">Climate </a>
 				</div>
 			</li>
 			<li class="nav-item">	
