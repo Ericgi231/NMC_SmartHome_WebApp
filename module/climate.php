@@ -1,10 +1,10 @@
 <?php
 	session_start();
 	if (!isset($_SESSION["user"])) {
-		header("Location: ./login.php");
+		header("Location: ../login.php");
 	}
 	ini_set('display_errors', 1);
-	include 'php/connect.php';
+	include '../php/connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -21,9 +21,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
 	<!-- Custom CSS & Js-->
-	<link rel="stylesheet" href="css/site.css"/>	
-	<link rel="stylesheet" href="css/index.css"/>
-	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="../css/site.css"/>	
+	<link rel="stylesheet" href="../css/module.css"/>
+	<script src="../js/main.js"></script>
 </head>
 <body class="fongle-light-gray">
 <!-- Load navbar -->
