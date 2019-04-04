@@ -22,12 +22,10 @@
 		<div class="form-group">
 			<label for="username">Username:</label>
 			<input type="text" name="username" class="form-control" placeholder="Username"  pattern="[a-zA-z0-9-]+" required/>
-			<small class="form-text text-muted">No spaces or special characters.</small>
 		</div>
 		<div class="form-group">
 			<label for="password">Password:</label>
 			<input type="password" name="password" class="form-control" placeholder="Password" pattern="[^\s]+" required/>
-			<small class="form-text text-muted">No spaces.</small>
 		</div>
 		<input type="submit" name="submit" value="Login" class="btn fongle-blue"/>
 		<input type="button" name="create" value="Sign Up" onclick="location.href='./create.php'" class="btn fongle-blue"/>
