@@ -27,45 +27,34 @@
 <!-- Load navbar -->
 <div id="nav-frame"></div>
 <!-- Content container -->
-<div class="container fongle-dark-gray">
-	<!-- User greeting row-->
+<div class="container fongle-dark-gray">	
 	<div class="row">
 		<div class="col-lg-12">
-			<div class="greeting">
-				<h1 class="text-center">Hello <?php echo $_SESSION["first"]; ?></h1>
-			</div>
-		</div>
-	</div>
-	
-	<div>
-		<div class="col-lg-6">
 			<div class="fongle-blue header-box">
-       				<h2 class="text-center">Contact Team Fongle</h2>  
-                    <p>Email: fongle@teamfongle.com</p> 
-                    <p>Phone Number: 231-999-0001</p>    
-                    <p>Northwestern Michigan College</p>  
+				<h2 class="text-center">Contact Team Fongle</h2>  
+				<p>Email: fongle@teamfongle.com</p> 
+				<p>Phone Number: 231-999-0001</p>    
+				<p>Northwestern Michigan College</p>  
 			</div>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<h3>Contact Form</h3>
+			<form>
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-	
-</div>
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-<div class="container">
-<h3>Contact Form</h3>
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit" method="post" action="mailto:fongle@teamfongle.com"> 
-  </form>
+				<input type="submit" value="Submit" method="post" action="mailto:ericgi231@gmail.com"> 
+			</form>
+		</div>
+	</div>
 </div>
 
 <!-- Bootstrap Js -->
