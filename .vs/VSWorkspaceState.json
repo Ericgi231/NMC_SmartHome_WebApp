@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
-    "",
+    "\\.git",
     "\\blocks",
     "\\css",
-    "\\images",
-    "\\images\\icons",
     "\\php"
   ],
-  "SelectedNode": "\\php\\connect.php",
+  "SelectedNode": "\\climate.php",
   "PreviewInSolutionExplorer": false
 }

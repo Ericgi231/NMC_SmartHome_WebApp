@@ -19,7 +19,7 @@
 
 	<!-- Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
 	<!-- Custom CSS & Js-->
 	<link rel="stylesheet" href="css/site.css"/>	
 	<link rel="stylesheet" href="css/index.css"/>
@@ -55,6 +55,8 @@
 			<div class="overview fongle-blue">
 				<h2 class="text-center">Graph</h2>  
 				<h2 class="text-center">"Comming Soon"</h2> 
+
+
 
 			</div>
 		</div>
