@@ -10,7 +10,7 @@ if ( isset( $_POST['submit'] ) )
 	$pass = $_POST['password'];	
 
 	//Check if login info is valid
-	$sql = "SELECT UserName, Password, FirstName FROM Users
+	$sql = "SELECT UserName, Password, FirstName, Id FROM Users
 		WHERE UserName = '" . $user . "'";
 	
 	$res = $conn->query($sql);
@@ -25,6 +25,7 @@ if ( isset( $_POST['submit'] ) )
 			{
 				$_SESSION["user"] = $row["UserName"];
 				$_SESSION["first"] = $row["FirstName"];
+				$_SESSION["id"] = $row["Id"];
 				header("Location: ../index.php");
 				$conn->close();
 				exit;
