@@ -32,7 +32,7 @@
 		<ul class="navbar-nav">
 			<li class="nav-item">
 				<?php
-					echo "<a class='nav-link' href='#'>User: " . $_SESSION["user"] . " Id: " . $_SESSION["id"] . "</a>";
+					echo "<a class='nav-link' style='color:white;' href='#'>" . $_SESSION["user"] . "#" . $_SESSION["id"] . "</a>";
 				?>
 			</li>
 			<li class="nav-item ">
