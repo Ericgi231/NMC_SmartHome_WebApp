@@ -50,8 +50,8 @@
 						echo "<div class='row'>";
 						while ($row = mysqli_fetch_assoc($result)) {
 							//echo "<p>Time: " . date_format(date_create($row["RecordTime"]), "m/d/y-h:i A") . "</p>";
-							echo "<div class='col-lg-6'><h2>Humidity: " . $row["Humidity"] . "%</h2></div>";
-							echo "<div class='col-lg-6'><h2>Temperature: " . (($row["Temperature"]*9/5) + 32) . "*f</h2></div>";
+							echo "<div class='col-lg-6'><h3>Humidity<br>" . $row["Humidity"] . "%</h3></div>";
+							echo "<div class='col-lg-6'><h3>Temperature<br>" . (($row["Temperature"]*9/5) + 32) . "*f</h3></div>";
 						}
 						echo "</div>";
 					} else {
