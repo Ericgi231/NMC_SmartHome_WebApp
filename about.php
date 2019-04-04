@@ -39,7 +39,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col-lg-4">
+		<div class="col-lg-3">
 			<div class="box fongle-blue">
 				<img src="./images/eric.png" alt="Eric" style="width:200px" "height:250px">
 				<h2>Eric</h2>
@@ -50,18 +50,7 @@
 			</div>
 		</div>
 
-		<div class="col-lg-4">
-			<div class="box fongle-blue">
-				<img src="./images/jason.png" alt="Jason" style="width:200px" "height:250px">
-				<h2>Jason</h2>
-				<p class="title">Backend Developer</p>
-				<p>Jason Luckhardt is a Freelance Programmer, where Jason works with clients from around the world.Jason has spent years programming as he originally started when he was 13 years old. In this time he has developed games, built websites, and created wonderful applications. Jason works hard on independent projects and doesn't stop until his clients are satisfied.
-				Jason enjoys video games, piano, and digital art.
-				</p>
-			</div>
-		</div>
-
-		<div class="col-lg-4">
+		<div class="col-lg-3">
 			<div class="box fongle-blue">
 				<img src="./images/bruce.png" alt="Bruce" style="width:200px" "height:250px">
 				<h2>Bruce</h2>
@@ -69,10 +58,8 @@
 				<p>Hello, my name is Bruce Abshire. I am currently a student with Ferris State University Michigan in the CIT Developer program. I graduated from NMC in 2010 with a bachelors in Math and the arts. I have had a wide range of professions from sales to managers over the years. I have worked with many different teams to overcome many different challenges to get where i am today. I have always strived to be the best that i can in everything that i do. I have always wanted to work with technology but always thought it was outside my reach. Now i have been able to take my passion with technology and my knowledge i have learned to be able to bring them together and have started to actually become a software developer and accomplish a lifelong dream.</p>
 			</div>
 		</div>
-	</div>
 
-	<div class="row">
-		<div class="col-lg-4">
+		<div class="col-lg-3">
 			<div class="box fongle-blue">
 				<img src="./images/courtney.png" alt="Courtney" style="width:200px" "height:250px">
 				<h2>Courtney</h2>
@@ -81,7 +68,7 @@
 			</div>
 		</div>
 
-		<div class="col-lg-4">
+		<div class="col-lg-3">
 			<div class="box fongle-blue">
 				<img src="./images/stacy.png" alt="Stacy" style="width:200px" "height:250px">
 				<h2>Stacy</h2>
@@ -92,7 +79,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col-lg-12">
+		<div class="col-lg-6">
 			<div class="box fongle-blue">      
 				<h2>Credit for Icons</h2>
 					<img src="./images/icons/001-thermometer-tool.svg" alt="thermometer" style="width:50px;"> <p>Thermometer tool free icon by: Freepik at www.flaticon.com</p> 

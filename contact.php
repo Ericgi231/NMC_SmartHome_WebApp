@@ -38,6 +38,7 @@
 		</div>
 	</div>
 	
+	<div>
 		<div class="col-lg-6">
 			<div class="fongle-blue header-box">
        				<h2 class="text-center">Contact Team Fongle</h2>  
