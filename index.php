@@ -32,7 +32,7 @@
 	<!-- User greeting row-->
 	<div class="row">
 		<div class="col-lg-12">
-			<div class="greeting">
+			<div class="header-box">
 				<h1 class="text-center">Hello <?php echo $_SESSION["first"]; ?></h1>
 			</div>
 		</div>
@@ -41,19 +41,21 @@
 	<!-- Temperature and Light overview row -->
 	<div class="row">
 		<div class="col-lg-6">
-			<div class="overview fongle-blue">
+			<div class="box fongle-blue">
         			<h2 class="text-center">Climate</h2>       
 				<?php
 					$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 1';
 					$result = mysqli_query($conn, $sql);	
 					if (mysqli_num_rows($result) > 0){
+						echo "<div class='row'>";
 						while ($row = mysqli_fetch_assoc($result)) {
 							//echo "<p>Time: " . date_format(date_create($row["RecordTime"]), "m/d/y-h:i A") . "</p>";
-							echo "<p>Humidity: " . $row["Humidity"] . "%</p>";
-							echo "<p>Temperature: " . (($row["Temperature"]*9/5) + 32) . "*f</p>";
+							echo "<div class='col-lg-6'><h2>Humidity: " . $row["Humidity"] . "%</h2></div>";
+							echo "<div class='col-lg-6'><h2>Temperature: " . (($row["Temperature"]*9/5) + 32) . "*f</h2></div>";
 						}
+						echo "</div>";
 					} else {
-						echo "<p>No data found</p>";
+						echo "<h3>No data found</h3>";
 					}	
 				?>
 			</div>
@@ -63,21 +65,6 @@
 			<div class="overview fongle-blue">
 				<h2 class="text-center">Lights</h2>
 				<h3>Coming Soon!</h3>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-6">
-			<div class="overview fongle-blue">
-       				<h2 class="text-center">Sensors</h2>
-					<h3>Coming Soon!</h3>
-			</div>
-		</div>
-
-		<div class="col-lg-6">
-			<div class="overview fongle-blue">
-       				<h2 class="text-center">Alarms</h2>
-					<h3>Coming Soon!</h3>
 			</div>
 		</div>
 	</div>
