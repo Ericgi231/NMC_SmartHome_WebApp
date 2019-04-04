@@ -37,8 +37,9 @@
 		</div>
 	</div>
 	
+	<div>
 		<div class="col-lg-6">
-			<div class="overview fongle-blue">
+			<div class="fongle-blue header-box">
        				<h2 class="text-center">Contact Team Fongle</h2>  
                     <p>Email: fongle@teamfongle.com</p> 
                     <p>Phone Number: 231-999-0001</p>    
@@ -50,8 +51,9 @@
 	
 </div>
 
-<h3>Contact Form</h3>
+
 <div class="container">
+<h3>Contact Form</h3>
   <form action="/action_page.php">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
