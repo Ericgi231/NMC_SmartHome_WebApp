@@ -2,11 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\assets",
+    "\\blocks",
     "\\css",
-    "\\images",
-    "\\images\\icons",
     "\\php"
   ],
-  "SelectedNode": "\\images\\jason.png",
+  "SelectedNode": "\\blocks\\nav.php",
   "PreviewInSolutionExplorer": false
 }
