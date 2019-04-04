@@ -4,7 +4,6 @@
 		header("Location: ./login.php");
 	}
 	ini_set('display_errors', 1);
-	include 'php/connect.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +20,7 @@
 	
 	<!-- Custom CSS & Js-->
 	<link rel="stylesheet" href="css/site.css"/>	
-	<link rel="stylesheet" href="css/index.css"/>
+	<link rel="stylesheet" href="css/contact.css"/>
 	<script src="js/main.js"></script>
 </head>
 <body class="fongle-light-gray">
@@ -66,8 +65,6 @@
 			<input type="submit" value="Submit" method="post" action="mailto:fongle@teamfongle.com"> 
 		</form>
 </div>
-
-<?php mysqli_close($conn); ?>
 
 <!-- Bootstrap Js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
