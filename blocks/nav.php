@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <nav class="navbar navbar-expand-lg navbar-light fongle-blue">
 	<a class="navbar-brand" href="/index.php">
 		<img src="./assets/logo.svg" alt="Team Fongle Logo" height="50" width="50" />
@@ -31,7 +32,7 @@
 		<ul class="navbar-nav">
 			<li class="nav-item">
 				<?php
-					echo "User: " . $_SESSION["user"] . " Id: " . $_SESSION["id"];
+					echo "<a class='nav-link' href='#'>User: " . $_SESSION["user"] . " Id: " . $_SESSION["id"] . "</a>";
 				?>
 			</li>
 			<li class="nav-item ">
