@@ -30,7 +30,13 @@
 <div id="nav-frame"></div>
 <!-- Content container -->
 <div class="container fongle-dark-gray">
-	
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="header-box">
+				<h1 class="center">Climate</h1>
+			</div>
+		</div>
+	</div>	
 	<!-- Temperature and Light overview row -->
 	<div class="row">
 		<div class="col-lg-6">
@@ -50,6 +56,7 @@
 					}	
 
 					var_dump{$result};
+
 				?>
 			</div>
 		</div>

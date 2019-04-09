@@ -44,7 +44,7 @@
 			<div class="box fongle-blue">
         			<h2 class="text-center">Climate</h2>       
 				<?php
-					$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 1';
+					$sql = 'SELECT * FROM Climate AS c JOIN Devices AS d ON concat(c.UserId, c.UnitId) = d.DeviceId  WHERE d.UserId = ' . $_SESSION["id"] . ' ORDER BY RecordTime DESC LIMIT 1';
 					$result = mysqli_query($conn, $sql);	
 					if (mysqli_num_rows($result) > 0){
 						echo "<div class='row'>";
