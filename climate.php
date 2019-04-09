@@ -50,6 +50,7 @@
 					}	
 
 					var_dump{$result};
+
 				?>
 			</div>
 		</div>
