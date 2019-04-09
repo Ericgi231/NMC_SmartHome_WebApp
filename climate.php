@@ -48,6 +48,8 @@
 					} else {
 						echo "<p>No data found</p>";
 					}	
+
+					var_dump{$result};
 				?>
 			</div>
 		</div>
@@ -57,15 +59,17 @@
 				<?php
 					$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 1';
 					$result = mysqli_query($conn, $sql);	
-					if (mysqli_num_rows($result) > 0){
-						while ($row = mysqli_fetch_assoc($result)) {
-							//echo "<p>Time: " . date_format(date_create($row["RecordTime"]), "m/d/y-h:i A") . "</p>";
-							echo "<p>Humidity: " . $row["Humidity"] . "%</p>";
-							echo "<p>Temperature: " . (($row["Temperature"]*9/5) + 32) . "*f</p>";
-						}
-					} else {
-						echo "<p>No data found</p>";
-					}	
+					
+					//loop through the returned data
+					$data = array();
+					foreach ($result as $row) {
+						$data[] = $row;
+					}
+
+					// free memory
+					$result->close();
+
+
 				?>
 			</div>
 		</div>
