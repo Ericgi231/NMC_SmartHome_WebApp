@@ -20,26 +20,9 @@
 	<!-- Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript">
-	google.charts.load('current', {'packages':['corechart']});
-	google.charts.setOnLoadCallback(drawChart);
-	function drawChart()
-   {
-    var data = new google.visualization.DataTable(<?php echo $jsonTable; ?>);
-
-    var options = {
-     title:'Sensors Data',
-     legend:{position:'bottom'},
-     chartArea:{width:'95%', height:'65%'}
-    };
-
-    var chart = new google.visualization.LineChart(document.getElementById('line_chart'));
-
-    chart.draw(data, options);
-   }
-	</script>
+	
 
 	<!-- Custom CSS & Js-->
 	<link rel="stylesheet" href="css/site.css"/>	
@@ -85,41 +68,40 @@
 				<h2 class="text-center">Graph</h2>  
 				<div id="line_chart" style="width: 100%; height: 500px"></div>
 				<?php				
-					$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 5';
+					$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 10';
 					$result = mysqli_query($conn, $sql);	
 					$rows = array();
 					$table = array();
 
 					$table['cols'] = array(
-						array(
-							'label' => 'Date Time',
-							'type' => 'number'
-						),
-					    array(
-							'label' => 'Temperature',
-							'type' => 'number'
-						)
+					 array(
+					  'label' => 'Date Time', 
+					  'type' => 'datetime'
+					 ),
+					 array(
+					  'label' => 'Temperature (°F)', 
+					  'type' => 'number'
+					 )
 					);
 
-
-					while($row = mysqli_fetch_array($result)){
-						$sub_array = array();
-						$datetime = explode(".", $row["RecordTime"]);
-						$sub_array[] = array(
-							"v" => 'Date(' . $datetime[0] . '000)'
-						);
-						
-						$sub_array[] = array(
-							"v" => $row["RecordTime"]
-						);
-						$rows[] = array(
-							"c" => $sub_array
+					while($row = mysqli_fetch_array($result))
+					{
+					 $sub_array = array();
+					 $datetime = explode(".", $row["RecordTime"]);
+					 $sub_array[] =  array(
+						  "v" => 'Date(' . $datetime[0] . '000)'
+						 );
+					 $sub_array[] =  array(
+						  "v" => $row["RecordTime"]
+						 );
+					 $rows[] =  array(
+						 "c" => $sub_array
 						);
 					}
-
 					$table['rows'] = $rows;
 					$jsonTable = json_encode($table);
-				?>
+
+					?>
 			</div>
 		</div>
 </div>
@@ -129,5 +111,23 @@
 <!-- Bootstrap Js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	google.charts.load('current', {'packages':['corechart']});
+	google.charts.setOnLoadCallback(drawChart);
+	function drawChart()
+   {
+    var data = new google.visualization.DataTable(<?php echo $jsonTable; ?>);
+
+    var options = {
+     title:'Sensors Data',
+     legend:{position:'bottom'},
+     chartArea:{width:'95%', height:'65%'}
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('line_chart'));
+
+    chart.draw(data, options);
+   }
+	</script>
 </body>
 </html>
