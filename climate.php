@@ -76,7 +76,7 @@
 					$result->close();
 
 					//close connection
-					$mysqli->close();
+					$conn->close();
 
 					//print the data
 					print json_encode($data);
