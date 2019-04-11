@@ -4,8 +4,9 @@
     "\\assets",
     "\\blocks",
     "\\css",
+    "\\module",
     "\\php"
   ],
-  "SelectedNode": "\\blocks\\nav.php",
+  "SelectedNode": "\\module\\climate.php",
   "PreviewInSolutionExplorer": false
 }
