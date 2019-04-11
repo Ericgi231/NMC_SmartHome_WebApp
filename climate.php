@@ -74,34 +74,35 @@
 					$table = array();
 
 					$table['cols'] = array(
-					 array(
-					  'label' => 'Date Time', 
-					  'type' => 'datetime'
-					 ),
-					 array(
-					  'label' => 'Temperature (°F)', 
-					  'type' => 'number'
-					 )
+						array(
+							'label' => 'Date Time',
+							'type' => 'number'
+						),
+					    array(
+							'label' => 'Temperature',
+							'type' => 'number'
+						)
 					);
 
-					while($row = mysqli_fetch_array($result))
-					{
-					 $sub_array = array();
-					 $datetime = explode(".", $row["RecordTime"]);
-					 $sub_array[] =  array(
-						  "v" => 'Date(' . $datetime[0] . '000)'
-						 );
-					 $sub_array[] =  array(
-						  "v" => $row["RecordTime"]
-						 );
-					 $rows[] =  array(
-						 "c" => $sub_array
+
+					while($row = mysqli_fetch_array($result)){
+						$sub_array = array();
+						$datetime = explode(".", $row["RecordTime"]);
+						$sub_array[] = array(
+							"v" => 'Date(' . $datetime[0] . '000)'
+						);
+						
+						$sub_array[] = array(
+							"v" => $row["RecordTime"]
+						);
+						$rows[] = array(
+							"c" => $sub_array
 						);
 					}
+
 					$table['rows'] = $rows;
 					$jsonTable = json_encode($table);
-
-					?>
+				?>
 			</div>
 		</div>
 </div>
