@@ -32,7 +32,7 @@
 		<div class="col-lg-12">
 			<div class="fongle-blue header-box">
 				<h2 class="text-center">About Team Fongle</h2>  
-				<p>Team Fongle is a group of students at NMC who choose to create a project that allows the user to view the current temperature and humidity of the room. It also allows the user to view which room the lights were last turned on.</p>     
+				<p>Team Fongle is a group of students at NMC who choose to create a project that allows the user to view the current temperature and humidity of the room. We plan on having more features in version 2.0 in the future.</p>     
 			</div>
 		</div>
 	</div>
