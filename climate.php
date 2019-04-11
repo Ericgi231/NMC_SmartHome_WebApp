@@ -37,7 +37,7 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="header-box">
-				<h1 class="center">Climate</h1>
+				<h1 class="text-center">Climate</h1>
 			</div>
 		</div>
 	</div>	
@@ -46,20 +46,20 @@
 		<div class="col-lg-6">
 			<div class="overview fongle-blue">
         			<h2 class="text-center">Climate</h2>       
-				<?php
-					$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 1';
+							<?php
+					$sql = 'SELECT * FROM Climate WHERE UserId = ' . $_SESSION["id"] . ' ORDER BY RecordTime DESC LIMIT 1';
 					$result = mysqli_query($conn, $sql);	
 					if (mysqli_num_rows($result) > 0){
+						echo "<div class='row'>";
 						while ($row = mysqli_fetch_assoc($result)) {
-							//echo "<p>Time: " . date_format(date_create($row["RecordTime"]), "m/d/y-h:i A") . "</p>";
-							echo "<p>Humidity: " . $row["Humidity"] . "%</p>";
-							echo "<p>Temperature: " . (($row["Temperature"]*9/5) + 32) . "*f</p>";
+							echo "<p>Time: " . date_format(date_create($row["RecordTime"]), "m/d/y-h:i A") . "</p>";
+							echo "<div class='col-lg-6'><h3>Humidity<br>" . $row["Humidity"] . "%</h3></div>";
+							echo "<div class='col-lg-6'><h3>Temperature<br>" . (($row["Temperature"]*9/5) + 32) . "*f</h3></div>";
 						}
+						echo "</div>";
 					} else {
-						echo "<p>No data found</p>";
+						echo "<h3>No data found</h3>";
 					}	
-
-
 				?>
 			</div>
 		</div>
