@@ -30,20 +30,10 @@
 <div class="container fongle-dark-gray">	
 	<div class="row">
 		<div class="col-lg-12">
-			<div class="fongle-blue header-box">
-				<h2 class="text-center">Contact Team Fongle</h2>  
-				<p>Email: fongle@teamfongle.com</p> 
-				<p>Phone Number: 231-999-0001</p>    
-				<p>Northwestern Michigan College</p>  
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-12">
 			<h3>Contact Form</h3>
 			<form>
 				<label for="fname">First Name</label>
-				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+				<input type="text" id="fname" name="firstname" placeholder="Your first name..">
 
 				<label for="lname">Last Name</label>
 				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
