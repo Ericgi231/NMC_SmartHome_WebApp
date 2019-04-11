@@ -47,7 +47,7 @@
 			<div class="overview fongle-blue">
         			<h2 class="text-center">Climate</h2>       
 				<?php
-					$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 1';
+					$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 5';
 					$result = mysqli_query($conn, $sql);	
 					if (mysqli_num_rows($result) > 0){
 						while ($row = mysqli_fetch_assoc($result)) {
