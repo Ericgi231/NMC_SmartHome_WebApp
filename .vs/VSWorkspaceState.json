@@ -4,8 +4,10 @@
     "\\assets",
     "\\blocks",
     "\\css",
+    "\\js",
+    "\\module",
     "\\php"
   ],
-  "SelectedNode": "\\css\\site.css",
+  "SelectedNode": "\\index.php",
   "PreviewInSolutionExplorer": false
 }
