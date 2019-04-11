@@ -55,7 +55,6 @@
 						echo "<p>No data found</p>";
 					}	
 
-					var_dump{$result};
 
 				?>
 			</div>
@@ -76,7 +75,11 @@
 					// free memory
 					$result->close();
 
+					//close connection
+					$mysqli->close();
 
+					//print the data
+					print json_encode($data);
 				?>
 			</div>
 		</div>
