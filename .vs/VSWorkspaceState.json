@@ -4,8 +4,9 @@
     "\\assets",
     "\\blocks",
     "\\css",
+    "\\module",
     "\\php"
   ],
-  "SelectedNode": "\\assets\\currectLogo.svg",
+  "SelectedNode": "\\module\\climate.php",
   "PreviewInSolutionExplorer": false
 }
