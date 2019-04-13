@@ -47,7 +47,7 @@
 			<div class="overview fongle-blue">
         			<h2 class="text-center">Climate</h2>       
 							<?php
-					$sql = 'SELECT * FROM Climate WHERE UserId = ' . $_SESSION["id"] . ' ORDER BY RecordTime DESC LIMIT 1';
+					$sql = 'SELECT * FROM Climate WHERE UserId = ' . $_SESSION["id"] . ' ORDER BY RecordTime DESC LIMIT 6';
 					$result = mysqli_query($conn, $sql);	
 					if (mysqli_num_rows($result) > 0){
 						echo "<div class='row'>";
