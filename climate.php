@@ -52,9 +52,9 @@
 					if (mysqli_num_rows($result) > 0){
 						echo "<div class='row'>";
 						while ($row = mysqli_fetch_assoc($result)) {
-							echo "<p>Time: " . date_format(date_create($row["RecordTime"]), "m/d/y-h:i A") . "</p>";
-							echo "<div class='col-lg-6'><h3>Humidity<br>" . $row["Humidity"] . "%</h3></div>";
-							echo "<div class='col-lg-6'><h3>Temperature<br>" . (($row["Temperature"]*9/5) + 32) . "*f</h3></div>";
+							echo "<div class='col-lg-4'><h3>Time: " . date_format(date_create($row["RecordTime"]), "m/d/y-h:i A") . "</h3></div>";
+							echo "<div class='col-lg-4'><h3>Humidity<br>" . $row["Humidity"] . "%</h3></div>";
+							echo "<div class='col-lg-4'><h3>Temperature<br>" . (($row["Temperature"]*9/5) + 32) . "*f</h3></div>";
 						}
 						echo "</div>";
 					} else {
@@ -68,7 +68,7 @@
 				<h2 class="text-center">Graph</h2>  
 				<div id="line_chart" style="width: 100%; height: 500px"></div>
 				<?php				
-					$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 6';
+					$sql = 'SELECT * FROM Climate WHERE UserId = ' . $_SESSION["id"] . ' ORDER BY RecordTime DESC LIMIT 6';
 					$result = mysqli_query($conn, $sql);	
 					$rows = array();
 					$table = array();
