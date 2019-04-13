@@ -68,7 +68,7 @@
 				<h2 class="text-center">Graph</h2>  
 				<div id="line_chart" style="width: 100%; height: 500px"></div>
 				<?php				
-					$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 10';
+					$sql = 'SELECT * FROM Climate ORDER BY RecordTime DESC LIMIT 6';
 					$result = mysqli_query($conn, $sql);	
 					$rows = array();
 					$table = array();
@@ -76,25 +76,33 @@
 					$table['cols'] = array(
 						array(
 							'label' => 'Date Time',
-							'type' => 'number'
+							'type' => 'datetime'
 						),
 					    array(
 							'label' => 'Temperature',
 							'type' => 'number'
-						)
+                   )
 					);
 
 
 					while($row = mysqli_fetch_array($result)){
 						$sub_array = array();
-						$datetime = explode(".", $row["RecordTime"]);
+						  $datetime = explode(".", $row["RecordTime"]);
+						  $dt = new DateTime($datetime[0]);
+						  $year = $dt->format('Y');
+						  $month = $dt->format('m') - 1; 
+						  $day = $dt->format('d');
+						  $hour = $dt->format('h');
+						  $minute = $dt->format('i');
+						  $second = $dt->format('s');
+                  
 						$sub_array[] = array(
-							"v" => 'Date(' . $datetime[0] . '000)'
+							"v" => 'Date('. $year .', '. $month .', '. $day .', '. $hour . ', '. $minute .', '. $second .')'
 						);
 						
 						$sub_array[] = array(
-							"v" => $row["RecordTime"]
-						);
+							"v" => $row["Temperature"]
+                  );
 						$rows[] = array(
 							"c" => $sub_array
 						);
@@ -126,7 +134,6 @@
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('line_chart'));
-
     chart.draw(data, options);
    }
 	</script>
