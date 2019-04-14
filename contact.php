@@ -11,7 +11,7 @@
 	<title>About</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    	<link rel="shortcut icon" href=""/>
+    	<link rel="shortcut icon" href="logo.ico"/>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -30,19 +30,24 @@
 <div class="container fongle-dark-gray">	
 	<div class="row">
 		<div class="col-lg-12">
-			<h3>Contact Form</h3>
-			<form>
-				<label for="fname">First Name</label>
-				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+		<div class="header-box">
+			<h2 class="text-center">Contact Us</h2>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="box">	
+			<form method="post" action="mailto:ericgi231@gmail.com" enctype="multipart/form-data" name="Fongle Support">
+				<label for="fname">Full Name</label>
+				<input type="text" id="fname" name="fullname" placeholder="Your name..">
 
-				<label for="lname">Last Name</label>
-				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-				<label for="subject">Subject</label>
+				<label for="subject">Comment</label>
 				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-				<input type="submit" value="Submit" method="post" action="mailto:ericgi231@gmail.com"> 
+				<input type="submit" value="Submit" name="submit"> 
 			</form>
+			</div>
 		</div>
 	</div>
 </div>

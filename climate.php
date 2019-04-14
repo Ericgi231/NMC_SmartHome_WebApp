@@ -26,7 +26,7 @@
 
 	<!-- Custom CSS & Js-->
 	<link rel="stylesheet" href="css/site.css"/>	
-	<link rel="stylesheet" href="css/index.css"/>
+	<link rel="stylesheet" href="css/module.css"/>
 	<script src="js/main.js"></script>
 </head>
 <body class="fongle-light-gray">
@@ -44,19 +44,26 @@
 	<!-- Temperature and Light overview row -->
 	<div class="row">
 		<div class="col-lg-6">
-			<div class="overview fongle-blue">
-        			<h2 class="text-center">Climate</h2>       
+			<div class="box fongle-blue">
+        			<h2 class="text-center">Table</h2>       
 							<?php
-					$sql = 'SELECT * FROM Climate WHERE UserId = ' . $_SESSION["id"] . ' ORDER BY RecordTime DESC LIMIT 6';
+					$sql = 'SELECT * FROM Climate WHERE UserId = ' . $_SESSION["id"] . ' ORDER BY RecordTime DESC LIMIT 9';
 					$result = mysqli_query($conn, $sql);	
 					if (mysqli_num_rows($result) > 0){
-						echo "<div class='row'>";
+						echo "<table class='table'>";
+						echo "<thead><tr>";
+						echo "<th>Time Recorded</th><th>Humidity</th><th>Temperature</th>";
+						echo "</thead></tr>";
+						echo "<tbody>";
 						while ($row = mysqli_fetch_assoc($result)) {
-							echo "<div class='col-lg-4'><h3>Time: " . date_format(date_create($row["RecordTime"]), "m/d/y-h:i A") . "</h3></div>";
-							echo "<div class='col-lg-4'><h3>Humidity<br>" . $row["Humidity"] . "%</h3></div>";
-							echo "<div class='col-lg-4'><h3>Temperature<br>" . (($row["Temperature"]*9/5) + 32) . "*f</h3></div>";
+							echo "<tr>";
+							echo "<td>" . date_format(date_create($row["RecordTime"]), "m/d/y-h:i A") . "</td>";
+							echo "<td>" . $row["Humidity"] . "%</td>";
+							echo "<td>" . $row["Temperature"] . "*c</td>";
+							echo "</tr>";
 						}
-						echo "</div>";
+						echo "</tbody>";
+						echo "</table>";
 					} else {
 						echo "<h3>No data found</h3>";
 					}	
@@ -64,11 +71,11 @@
 			</div>
 		</div>
 		<div class="col-lg-6">
-			<div class="overview fongle-blue">
+			<div class="box fongle-blue">
 				<h2 class="text-center">Graph</h2>  
 				<div id="line_chart" style="width: 100%; height: 500px"></div>
 				<?php				
-					$sql = 'SELECT * FROM Climate WHERE UserId = ' . $_SESSION["id"] . ' ORDER BY RecordTime DESC LIMIT 6';
+					$sql = 'SELECT * FROM Climate WHERE UserId = ' . $_SESSION["id"] . ' ORDER BY RecordTime DESC LIMIT 48';
 					$result = mysqli_query($conn, $sql);	
 					$rows = array();
 					$table = array();
