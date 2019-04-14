@@ -12,7 +12,7 @@
 	<title>Dashboard</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="shortcut icon" href="assets/logo.svg"/>
+	<link rel="shortcut icon" href="logo.ico"/>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -62,8 +62,8 @@
 		</div>
 
 		<div class="col-lg-6">
-			<div class="overview fongle-blue">
-				<h2 class="text-center">Lights</h2>
+			<div class="box fongle-blue">
+				<h2 class="text-center">Lights</h2>	
 				<h3>Coming Soon!</h3>
 			</div>
 		</div>

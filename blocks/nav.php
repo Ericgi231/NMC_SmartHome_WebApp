@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <nav class="navbar navbar-expand-lg navbar-light fongle-blue">
 	<a class="navbar-brand" href="/index.php">
-		<img src="/assets/logo.svg" alt="Team Fongle Logo" height="50" width="50" />
+		<img src="/assets/logo.png" alt="Team Fongle Logo" height="50" width="50" />
 	</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle Navigation">
 		<span class="navbar-toggler-icon"></span>
