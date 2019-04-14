@@ -30,16 +30,6 @@
 <div class="container fongle-dark-gray">	
 	<div class="row">
 		<div class="col-lg-12">
-			<div class="header-box">
-				<h2 class="text-center">Contact</h2>  
-				<p>Email: fongle@teamfongle.com</p> 
-				<p>Phone Number: 231-999-0001</p>    
-				<p>Northwestern Michigan College</p>  
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-12">
 			<h3>Contact Form</h3>
 			<form>
 				<label for="fname">First Name</label>
