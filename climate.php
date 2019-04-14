@@ -57,7 +57,7 @@
 						echo "<tbody>";
 						while ($row = mysqli_fetch_assoc($result)) {
 							echo "<tr>";
-							echo "<td>" . date_format(date_create($row["RecordTime"]), "m/d/y-h:i A") . "</td>";
+							echo "<td>" . date_format(date_create($row["RecordTime"]), "m/d/y h:i A") . "</td>";
 							echo "<td>" . $row["Humidity"] . "%</td>";
 							echo "<td>" . $row["Temperature"] . "*c</td>";
 							echo "</tr>";
